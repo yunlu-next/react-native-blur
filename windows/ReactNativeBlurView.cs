@@ -183,7 +183,7 @@ namespace ReactNativeBlur
         }
     }
 
-    public sealed class ReactNativeBlurViewManager :
+    internal sealed class ReactNativeBlurViewManager :
         AttributedViewManager<ReactNativeBlurView>,
         IViewManagerWithChildren
     {
