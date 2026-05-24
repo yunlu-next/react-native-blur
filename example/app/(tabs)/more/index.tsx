@@ -6,7 +6,7 @@ import {
   ImageBackground,
 } from 'react-native';
 import { useRouter } from 'expo-router';
-import { BlurView } from '@sbaiahmed1/react-native-blur';
+import { BlurView } from '@yunlu-next/blur';
 import { DEMO_IMAGES } from '@/constants/blur';
 
 const MORE_SCREENS = [

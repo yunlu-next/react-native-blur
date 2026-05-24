@@ -1,7 +1,4 @@
-import {
-  LiquidGlassView,
-  LiquidGlassContainer,
-} from '@sbaiahmed1/react-native-blur';
+import { LiquidGlassView, LiquidGlassContainer } from '@yunlu-next/blur';
 import { useState, useRef } from 'react';
 import {
   View,

@@ -1,5 +1,5 @@
 import { Dimensions } from 'react-native';
-import { type BlurType } from '@sbaiahmed1/react-native-blur';
+import { type BlurType } from '@yunlu-next/blur';
 
 export const { width } = Dimensions.get('window');
 

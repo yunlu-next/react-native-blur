@@ -5,7 +5,7 @@ import {
   ImageBackground,
   ScrollView,
 } from 'react-native';
-import { VibrancyView } from '@sbaiahmed1/react-native-blur';
+import { VibrancyView } from '@yunlu-next/blur';
 import { DEMO_IMAGES } from '@/constants/blur';
 import ScreenHeader from '@/components/screen-header';
 

@@ -1,6 +1,6 @@
 {
-  "name": "@sbaiahmed1/react-native-blur",
-  "version": "4.6.2",
+  "name": "@yunlu-next/blur",
+  "version": "1.0.0",
   "description": "React native modern blur view",
   "main": "./lib/module/index.js",
   "types": "./lib/typescript/src/index.d.ts",
@@ -17,6 +17,7 @@
     "lib",
     "android",
     "ios",
+    "windows",
     "cpp",
     "*.podspec",
     "react-native.config.js",
@@ -52,17 +53,16 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/sbaiahmed1/react-native-blur.git"
+    "url": "git+https://github.com/yunlu-next/react-native-blur.git"
   },
   "author": "Ahmed Sbai <ahmedclubust@gmail.com> (https://github.com/sbaiahmed1)",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/sbaiahmed1/react-native-blur/issues"
+    "url": "https://github.com/yunlu-next/react-native-blur/issues"
   },
-  "homepage": "https://github.com/sbaiahmed1/react-native-blur#readme",
+  "homepage": "https://github.com/yunlu-next/react-native-blur#readme",
   "publishConfig": {
-    "registry": "https://registry.npmjs.org/",
-    "access": "public"
+    "registry": "https://npm.pkg.github.com/"
   },
   "devDependencies": {
     "@commitlint/config-conventional": "^19.6.0",

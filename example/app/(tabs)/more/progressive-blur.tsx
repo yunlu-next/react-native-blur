@@ -5,7 +5,7 @@ import {
   ImageBackground,
   ScrollView,
 } from 'react-native';
-import { ProgressiveBlurView } from '@sbaiahmed1/react-native-blur';
+import { ProgressiveBlurView } from '@yunlu-next/blur';
 import { DEMO_IMAGES } from '@/constants/blur';
 import ScreenHeader from '@/components/screen-header';
 

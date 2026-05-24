@@ -1,4 +1,4 @@
-import {
+﻿import {
   View,
   Text,
   TouchableOpacity,
@@ -6,7 +6,7 @@ import {
   Platform,
 } from 'react-native';
 import { useRouter } from 'expo-router';
-import { BlurView } from '@sbaiahmed1/react-native-blur';
+import { BlurView } from '@yunlu-next/blur';
 
 interface ScreenHeaderProps {
   title: string;

@@ -2,7 +2,7 @@
   "compilerOptions": {
     "rootDir": ".",
     "paths": {
-      "@sbaiahmed1/react-native-blur": ["./src/index"],
+      "@yunlu-next/blur": ["./src/index"],
       "@/assets/*": ["./example/assets/*"],
       "@/components/*": ["./example/src/components/*"],
       "@/constants/*": ["./example/src/constants/*"],

@@ -1,4 +1,4 @@
-# @sbaiahmed1/react-native-blur
+# @yunlu-next/blur
 
 A modern React Native library providing **six specialized components** for advanced visual effects: `BlurView` for native blur effects, `VibrancyView` for iOS vibrancy effects, `LiquidGlassView` for cutting-edge liquid glass effects on iOS 26+ (with Android fallback to enhanced blur), `LiquidGlassContainer` for iOS 26+ glass container effects with configurable spacing, `ProgressiveBlurView` for smooth, variable blur transitions, and `BlurSwitch` for beautiful blur switch buttons on Android.
 
@@ -6,7 +6,7 @@ A modern React Native library providing **six specialized components** for advan
 
 <div align="center">
   <p>
-    <img src="https://img.shields.io/npm/v/@sbaiahmed1/react-native-blur?style=for-the-badge&color=blue" alt="npm version" />
+    <img src="https://img.shields.io/npm/v/@yunlu-next/blur?style=for-the-badge&color=blue" alt="npm version" />
     <img src="https://img.shields.io/npm/dm/%40sbaiahmed1%2Freact-native-blur?style=for-the-badge" alt="downloads per month" />
     <img src="https://img.shields.io/github/license/sbaiahmed1/react-native-blur?style=for-the-badge&color=orange" alt="license" />
     <img src="https://img.shields.io/github/stars/sbaiahmed1/react-native-blur?style=for-the-badge&color=yellow" alt="stars" />
@@ -86,7 +86,7 @@ In version 4.0.0, we've **separated concerns** into **two dedicated components**
 
 ```tsx
 // ✅ New API (v4.0.0) - Current
-import { BlurView, LiquidGlassView } from '@sbaiahmed1/react-native-blur';
+import { BlurView, LiquidGlassView } from '@yunlu-next/blur';
 
 // For blur effects
 <BlurView
@@ -126,7 +126,7 @@ import { BlurView, LiquidGlassView } from '@sbaiahmed1/react-native-blur';
 />;
 
 // After (4.0.0)
-import { LiquidGlassView } from '@sbaiahmed1/react-native-blur';
+import { LiquidGlassView } from '@yunlu-next/blur';
 
 <LiquidGlassView
   glassType="regular"
@@ -205,7 +205,7 @@ import { LiquidGlassView } from '@sbaiahmed1/react-native-blur';
 import { BlurView } from '@react-native-community/blur';
 
 // After - same API, now with dedicated components
-import { BlurView, LiquidGlassView } from '@sbaiahmed1/react-native-blur';
+import { BlurView, LiquidGlassView } from '@yunlu-next/blur';
 
 // Use BlurView for standard blur
 <BlurView blurType="light" blurAmount={10} />
@@ -222,14 +222,14 @@ import { BlurView } from 'expo-blur';
 <BlurView intensity={50} tint="light" />;
 
 // After
-import { BlurView } from '@sbaiahmed1/react-native-blur';
+import { BlurView } from '@yunlu-next/blur';
 <BlurView blurAmount={50} blurType="light" />;
 ```
 
 **Migration Steps:**
 
 1. Uninstall old library: `npm uninstall @react-native-community/blur expo-blur`
-2. Install: `npm install @sbaiahmed1/react-native-blur`
+2. Install: `npm install @yunlu-next/blur`
 3. Update imports
 4. Run `cd ios && pod install`
 
@@ -238,9 +238,9 @@ import { BlurView } from '@sbaiahmed1/react-native-blur';
 > ⚠️ **ANDROID USERS**: This library requires Android Gradle Plugin (AGP) version **8.9.1 or newer**. See [Android Setup Requirements](#android-setup) for details.
 
 ```bash
-npm install @sbaiahmed1/react-native-blur
+npm install @yunlu-next/blur
 # or
-yarn add @sbaiahmed1/react-native-blur
+yarn add @yunlu-next/blur
 ```
 
 ### iOS Setup
@@ -289,7 +289,7 @@ Use `BlurView` for standard blur effects across all platforms:
 ```tsx
 import React from 'react';
 import { View, Text } from 'react-native';
-import { BlurView } from '@sbaiahmed1/react-native-blur';
+import { BlurView } from '@yunlu-next/blur';
 
 export default function App() {
   return (
@@ -317,7 +317,7 @@ export default function App() {
 
 ```tsx
 import React from 'react';
-import { BlurView } from '@sbaiahmed1/react-native-blur';
+import { BlurView } from '@yunlu-next/blur';
 
 function MyComponent() {
   return (
@@ -344,7 +344,7 @@ Use `ProgressiveBlurView` for smooth, gradient blur transitions. This component 
 
 ```tsx
 import React from 'react';
-import { ProgressiveBlurView } from '@sbaiahmed1/react-native-blur';
+import { ProgressiveBlurView } from '@yunlu-next/blur';
 
 function GradientBlurComponent() {
   return (
@@ -419,7 +419,7 @@ Use `LiquidGlassView` for cutting-edge liquid glass effects. **Note:** This comp
 
 ```tsx
 import React from 'react';
-import { LiquidGlassView } from '@sbaiahmed1/react-native-blur';
+import { LiquidGlassView } from '@yunlu-next/blur';
 
 function LiquidGlassComponent() {
   return (
@@ -442,7 +442,7 @@ function LiquidGlassComponent() {
 
 ```tsx
 import React from 'react';
-import { LiquidGlassView } from '@sbaiahmed1/react-native-blur';
+import { LiquidGlassView } from '@yunlu-next/blur';
 
 function InteractiveGlass() {
   return (
@@ -473,10 +473,7 @@ Use `LiquidGlassContainer` to create a glass container with configurable spacing
 
 ```tsx
 import React from 'react';
-import {
-  LiquidGlassContainer,
-  LiquidGlassView,
-} from '@sbaiahmed1/react-native-blur';
+import { LiquidGlassContainer, LiquidGlassView } from '@yunlu-next/blur';
 
 function GlassContainerExample() {
   return (
@@ -507,10 +504,7 @@ function GlassContainerExample() {
 ```tsx
 import React, { useRef } from 'react';
 import { Animated } from 'react-native';
-import {
-  LiquidGlassContainer,
-  LiquidGlassView,
-} from '@sbaiahmed1/react-native-blur';
+import { LiquidGlassContainer, LiquidGlassView } from '@yunlu-next/blur';
 
 function AnimatedGlassContainer() {
   const translateX = useRef(new Animated.Value(0)).current;
@@ -562,7 +556,7 @@ Use `BlurSwitch` for beautiful switch buttons with blur effects. On Android, thi
 ```tsx
 import React, { useState } from 'react';
 import { View, Text } from 'react-native';
-import { BlurSwitch } from '@sbaiahmed1/react-native-blur';
+import { BlurSwitch } from '@yunlu-next/blur';
 
 function BlurSwitchExample() {
   const [isEnabled, setIsEnabled] = useState(false);
@@ -585,7 +579,7 @@ function BlurSwitchExample() {
 
 ```tsx
 import React, { useState } from 'react';
-import { BlurSwitch } from '@sbaiahmed1/react-native-blur';
+import { BlurSwitch } from '@yunlu-next/blur';
 
 function CustomBlurSwitch() {
   const [darkMode, setDarkMode] = useState(false);
@@ -816,7 +810,7 @@ import {
   ProgressiveBlurViewProps,
   BlurViewProps,
   VibrancySwitchProps,
-} from '@sbaiahmed1/react-native-blur';
+} from '@yunlu-next/blur';
 
 // BlurType is exported for type checking
 const blurType: BlurType = 'systemMaterial';
@@ -1006,7 +1000,7 @@ MIT
 
 <div align="center">
   <img src="https://img.shields.io/github/contributors/sbaiahmed1/react-native-blur?style=for-the-badge" alt="contributors" />
-  <img src="https://img.shields.io/npm/dt/@sbaiahmed1/react-native-blur?style=for-the-badge&color=green" alt="downloads" />
+  <img src="https://img.shields.io/npm/dt/@yunlu-next/blur?style=for-the-badge&color=green" alt="downloads" />
   <img src="https://img.shields.io/github/last-commit/sbaiahmed1/react-native-blur?style=for-the-badge" alt="last commit" />
   <img src="https://img.shields.io/github/issues/sbaiahmed1/react-native-blur?style=for-the-badge" alt="issues" />
   <img src="https://img.shields.io/github/issues-pr/sbaiahmed1/react-native-blur?style=for-the-badge" alt="pull requests" />

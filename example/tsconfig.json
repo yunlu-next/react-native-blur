@@ -4,7 +4,7 @@
     "baseUrl": ".",
     "rootDir": ".",
     "paths": {
-      "@sbaiahmed1/react-native-blur": ["../src/index"],
+      "@yunlu-next/blur": ["../src/index"],
       "@/assets/*": ["./assets/*"],
       "@/components/*": ["./src/components/*"],
       "@/constants/*": ["./src/constants/*"],

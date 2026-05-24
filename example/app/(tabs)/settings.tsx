@@ -1,5 +1,5 @@
 import { Text, StyleSheet, ImageBackground, ScrollView } from 'react-native';
-import { BlurView } from '@sbaiahmed1/react-native-blur';
+import { BlurView } from '@yunlu-next/blur';
 import { DEMO_IMAGES } from '@/constants/blur';
 
 export default function SettingsScreen() {

@@ -6,7 +6,7 @@ import {
   ImageBackground,
   ScrollView,
 } from 'react-native';
-import { BlurView, BlurSwitch } from '@sbaiahmed1/react-native-blur';
+import { BlurView, BlurSwitch } from '@yunlu-next/blur';
 import { BLUR_VIEW_SWITCHES, DEMO_IMAGES } from '@/constants/blur';
 
 const BLUR_TYPES = [
