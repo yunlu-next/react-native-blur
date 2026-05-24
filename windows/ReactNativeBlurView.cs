@@ -260,7 +260,10 @@ namespace ReactNativeBlur
     {
         public void CreatePackage(IReactPackageBuilder packageBuilder)
         {
+            CreatePackageImplementation(packageBuilder);
             packageBuilder.AddViewManager("ReactNativeBlurView", () => new ReactNativeBlurViewManager());
         }
+
+        partial void CreatePackageImplementation(IReactPackageBuilder packageBuilder);
     }
 }
