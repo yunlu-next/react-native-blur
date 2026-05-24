@@ -10,13 +10,14 @@ namespace ReactNativeBlur
 {
     public sealed class ReactNativeBlurView : Grid
     {
-        private readonly Grid backdropLayer;
-        private readonly Grid overlayLayer;
+        private readonly Border backdropLayer;
+        private readonly Border overlayLayer;
         private readonly Grid contentLayer;
         private readonly AcrylicBrush acrylicBrush;
 
         private string blurType = "xlight";
         private double blurAmount = 10.0;
+        private double borderRadius = 0.0;
         private Color? customTintColor;
         private Color? customFallbackColor;
 
@@ -28,12 +29,12 @@ namespace ReactNativeBlur
                 AlwaysUseFallback = false,
             };
 
-            backdropLayer = new Grid
+            backdropLayer = new Border
             {
                 Background = acrylicBrush,
                 IsHitTestVisible = false,
             };
-            overlayLayer = new Grid
+            overlayLayer = new Border
             {
                 IsHitTestVisible = false,
             };
@@ -81,6 +82,12 @@ namespace ReactNativeBlur
             }
         }
 
+        public void SetBorderRadius(double value)
+        {
+            borderRadius = Math.Max(value, 0.0);
+            UpdateCornerRadius();
+        }
+
         public void InsertReactChild(UIElement child, int index)
         {
             contentLayer.Children.Insert(index, child);
@@ -118,6 +125,13 @@ namespace ReactNativeBlur
                 Math.Max(palette.BaseTintOpacity + blurAmount / 220.0, 0.0),
                 0.85);
             acrylicBrush.TintLuminosityOpacity = palette.LuminosityOpacity;
+        }
+
+        private void UpdateCornerRadius()
+        {
+            var cornerRadius = new CornerRadius(borderRadius);
+            backdropLayer.CornerRadius = cornerRadius;
+            overlayLayer.CornerRadius = cornerRadius;
         }
 
         private static BlurPalette GetPalette(string type)
@@ -213,6 +227,12 @@ namespace ReactNativeBlur
         public void ReducedTransparencyFallbackColor(ReactNativeBlurView view, Brush value)
         {
             view.SetReducedTransparencyFallbackColor(value);
+        }
+
+        [ViewManagerProperty("borderRadius")]
+        public void BorderRadius(ReactNativeBlurView view, double value)
+        {
+            view.SetBorderRadius(value);
         }
 
         public void AddView(FrameworkElement parent, UIElement child, long index)
