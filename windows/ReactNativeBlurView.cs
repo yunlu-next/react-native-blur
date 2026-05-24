@@ -256,7 +256,7 @@ namespace ReactNativeBlur
         }
     }
 
-    public sealed class ReactPackageProvider : IReactPackageProvider
+    public sealed partial class ReactPackageProvider : IReactPackageProvider
     {
         public void CreatePackage(IReactPackageBuilder packageBuilder)
         {
